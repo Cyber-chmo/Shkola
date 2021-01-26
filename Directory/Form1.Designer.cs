@@ -34,9 +34,10 @@ namespace Directory
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButtonPhysics = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,6 @@ namespace Directory
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Русский язык";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -98,18 +98,17 @@ namespace Directory
             this.radioButton3.Text = "Геометрия";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButtonPhysics
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton4.Location = new System.Drawing.Point(3, 114);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(98, 31);
-            this.radioButton4.TabIndex = 5;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Физика";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            this.radioButtonPhysics.AutoSize = true;
+            this.radioButtonPhysics.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.radioButtonPhysics.Location = new System.Drawing.Point(3, 114);
+            this.radioButtonPhysics.Name = "radioButtonPhysics";
+            this.radioButtonPhysics.Size = new System.Drawing.Size(98, 31);
+            this.radioButtonPhysics.TabIndex = 5;
+            this.radioButtonPhysics.TabStop = true;
+            this.radioButtonPhysics.Text = "Физика";
+            this.radioButtonPhysics.UseVisualStyleBackColor = true;
             // 
             // radioButton5
             // 
@@ -128,23 +127,38 @@ namespace Directory
             this.panel1.Controls.Add(this.radioButton1);
             this.panel1.Controls.Add(this.radioButton5);
             this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton4);
+            this.panel1.Controls.Add(this.radioButtonPhysics);
             this.panel1.Controls.Add(this.radioButton3);
             this.panel1.Location = new System.Drawing.Point(20, 194);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(711, 188);
+            this.panel1.Size = new System.Drawing.Size(196, 188);
             this.panel1.TabIndex = 7;
+            // 
+            // button1
+            // 
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(18, 388);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 35);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Поиск";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Справочник за 7-8 классы";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -159,9 +173,10 @@ namespace Directory
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButtonPhysics;
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

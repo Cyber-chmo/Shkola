@@ -17,12 +17,26 @@ namespace Directory
             InitializeComponent();
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            if (radioButtonPhysics.Checked)
+            {
+                PhysicsForm form = new PhysicsForm("Физика");
+                form.Show();
+            }
+            if (radioButton1.Checked)
+            {
+                PhysicsForm form = new PhysicsForm("Русский язык");
+                form.Show();
+            }
+            if (radioButton2.Checked)
+            {
+                PhysicsForm form = new PhysicsForm("Алгебра");
+                form.Show();
+            }
         }
 
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
