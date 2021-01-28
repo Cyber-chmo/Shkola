@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using System.IO;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,10 +25,7 @@ namespace Directory
                 comboBox1.Items.Add("Введение");
                 comboBox1.Items.Add("Трение");
 
-                label3.Text = "Физика — это наука о природе (естествознание) в самом общем смысле" +
-                    " (часть природоведения). Предмет её изучения составляет материя (в виде вещества и полей)"+
-                    " и наиболее общие формы её движения, а также фундаментальные взаимодействия природы, "+
-                    "управляющие движением материи.";
+                label3.Text = File.ReadAllText("../../../Files/Физика.txt"); 
 
                // pictureBox1.Load("../../../Pictures/Physics1.jpg");
               //  pictureBox2.Load("../../../Pictures/Physics2.jpg");
