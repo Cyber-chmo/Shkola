@@ -18,6 +18,7 @@ namespace Directory
 
             Text = predmet;
             label1.Text = predmet;
+            label3.Text = File.ReadAllText("../../../Files/" + predmet + ".txt");
 
             if (predmet == "Физика")
             {
@@ -25,7 +26,7 @@ namespace Directory
                 comboBox1.Items.Add("Введение");
                 comboBox1.Items.Add("Трение");
 
-                label3.Text = File.ReadAllText("../../../Files/Физика.txt"); 
+                //label3.Text = File.ReadAllText("../../../Files/Физика.txt"); 
 
                // pictureBox1.Load("../../../Pictures/Physics1.jpg");
               //  pictureBox2.Load("../../../Pictures/Physics2.jpg");
@@ -44,6 +45,26 @@ namespace Directory
                 comboBox1.Items.Add("Многочлены");
                 comboBox1.Items.Add("Ещё что-то");
             }
+            else if (predmet == "Геометрия")
+            {
+                comboBox1.Items.Clear();
+                comboBox1.Items.Add("Введение");
+                comboBox1.Items.Add("Прямая. Углы.");
+                comboBox1.Items.Add("Нет");
+                comboBox1.Items.Add("Ещё что-то");
+            }
+            else if (predmet == "Химия")
+            {
+                comboBox1.Items.Clear();
+                comboBox1.Items.Add("Введение");
+                comboBox1.Items.Add("О");
+                comboBox1.Items.Add("О2");
+                comboBox1.Items.Add("О3");
+            }
+
+
+
+
 
         }
 
@@ -54,12 +75,23 @@ namespace Directory
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
             if (label1.Text == "Физика" &&
-                comboBox1.Text == "Введение")
+                comboBox1.Text == "Трение")
             {
-                //MessageBox.Show("Согласовано. Вводите войска!");
-                //pictureBox1.Load("../../Картинки/пр1.png");
-            }
+
+                label3.Text = File.ReadAllText("../../../Files/" + label1.Text + " " + comboBox1.Text + ".txt");
+            }    
+
+
+
+
+            // pictureBox1.Load("../../../Pictures/Physics1.jpg");
+
         }
     }
 }

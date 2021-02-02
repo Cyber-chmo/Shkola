@@ -77,6 +77,7 @@ namespace Directory
             this.comboBox1.Size = new System.Drawing.Size(235, 32);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.Text = "Выберете тему";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -101,12 +102,12 @@ namespace Directory
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(555, 179);
+            this.textBox1.Location = new System.Drawing.Point(569, 163);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(203, 49);
+            this.textBox1.Size = new System.Drawing.Size(203, 38);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "frer\r\n";
             // 
@@ -119,7 +120,7 @@ namespace Directory
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(268, 425);
+            this.pictureBox2.Location = new System.Drawing.Point(268, 423);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(235, 124);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

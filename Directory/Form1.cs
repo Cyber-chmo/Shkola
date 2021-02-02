@@ -17,11 +17,35 @@ namespace Directory
             InitializeComponent();
         }
 
+        void OpenPredmet(RadioButton rb)
+        {
+            if (rb.Checked)
+            {
+                PhysicsForm klesch = new PhysicsForm(rb.Text);
+                klesch.Show();
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            //                             все, что лежит на панели1
+            foreach (Control ctrl in panel1.Controls)
+            {
+                if (ctrl is RadioButton)
+                    OpenPredmet((RadioButton)ctrl);
+            }
+
+
+            /*
+            OpenPredmet(radioButton4);
+            OpenPredmet(radioButton1);
+            OpenPredmet(radioButton2);
+            OpenPredmet(radioButton3);
+            OpenPredmet(radioButton5);
+
             if (radioButtonPhysics.Checked)
             {
-                PhysicsForm form = new PhysicsForm("Физика");
+                PhysicsForm form = new PhysicsForm(radioButtonPhysics.Text);
                 form.Show();
             }
             if (radioButton1.Checked)
@@ -34,6 +58,19 @@ namespace Directory
                 PhysicsForm form = new PhysicsForm("Алгебра");
                 form.Show();
             }
+            if (radioButton3.Checked)
+            {
+                PhysicsForm form = new PhysicsForm("Геометрия");
+                form.Show();
+            }
+            if (radioButton5.Checked)
+            {
+                PhysicsForm form = new PhysicsForm("Химия");
+                form.Show();
+            }*/
+
+
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
