@@ -41,9 +41,10 @@ namespace Directory
             {
                 comboBox1.Items.Clear();
                 comboBox1.Items.Add("Введение");
-                comboBox1.Items.Add("Одночлены");
-                comboBox1.Items.Add("Многочлены");
-                comboBox1.Items.Add("Ещё что-то");
+                comboBox1.Items.Add("Одночлены и Многочлены");
+                comboBox1.Items.Add("Квадратные уравнения");
+                comboBox1.Items.Add("Биквадратные уравнения");
+
             }
             else if (predmet == "Геометрия")
             {
@@ -80,18 +81,17 @@ namespace Directory
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (label1.Text == "Физика" &&
-                comboBox1.Text == "Трение")
-            {
-
-                label3.Text = File.ReadAllText("../../../Files/" + label1.Text + " " + comboBox1.Text + ".txt");
-            }    
-
-
-
-
-            // pictureBox1.Load("../../../Pictures/Physics1.jpg");
-
+            if (comboBox1.Text != "")
+            { 
+                try
+                {
+                    label3.Text = File.ReadAllText("../../../Files/Темы/" + label1.Text + " " + comboBox1.Text + ".txt");
+                }
+                catch (Exception) 
+                {
+                    MessageBox.Show("Такой темы нет");
+                }
+            }
         }
     }
 }

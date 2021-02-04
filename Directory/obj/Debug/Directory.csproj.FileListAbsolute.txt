@@ -22,3 +22,15 @@ C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.csproj.Gen
 C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
 C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.exe
 C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\bin\Debug\Directory.pdb
