@@ -81,7 +81,7 @@ namespace Directory
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(27, 423);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 426);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(235, 124);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,18 +91,17 @@ namespace Directory
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(569, 196);
+            this.textBox1.Location = new System.Drawing.Point(548, 108);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(203, 44);
+            this.textBox1.Size = new System.Drawing.Size(203, 55);
             this.textBox1.TabIndex = 6;
-            this.textBox1.Text = "frer\r\n";
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(23, 179);
+            this.label3.Location = new System.Drawing.Point(23, 182);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(511, 241);
             this.label3.TabIndex = 7;
@@ -118,7 +117,7 @@ namespace Directory
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(256, 196);
+            this.label4.Location = new System.Drawing.Point(268, 230);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(516, 333);
             this.label4.TabIndex = 9;

@@ -44,6 +44,7 @@ namespace Directory
                 comboBox1.Items.Add("Одночлены и Многочлены");
                 comboBox1.Items.Add("Квадратные уравнения");
                 comboBox1.Items.Add("Биквадратные уравнения");
+                comboBox1.Items.Add("Неполные квадратные уравнения");
 
             }
             else if (predmet == "Геометрия")

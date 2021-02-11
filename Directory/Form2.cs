@@ -16,13 +16,15 @@ namespace Directory
         public PictureBox picture;
         public Label label;
         public string tags;
+        public string discipline;
+        public int difficulty;
 
     }
     public partial class Form2 : Form
     {
         Tema[] tems_list = new Tema[3];
 
-            
+
 
 
 
@@ -33,15 +35,33 @@ namespace Directory
             tems_list[0].name = "Квадратные уравнения";
             tems_list[0].label = label1;
             tems_list[0].tags = "Математика, уравнения";
+            tems_list[0].discipline = "Математика";
+            tems_list[0].difficulty = 2;
+
             tems_list[1].name = "Одночлены и Многочлены";
             tems_list[1].label = label2;
             tems_list[1].tags = "Математика, одночлены";
+            tems_list[1].discipline = "Математика";
+            tems_list[1].difficulty = 2;
+
             tems_list[2].name = "Биквадратные уравнения";
             tems_list[2].label = label3;
             tems_list[2].tags = "Математика, уравнения";
+            tems_list[2].discipline = "Математика";
+            tems_list[2].difficulty = 4;
+
+            tems_list[0].name = "Неполные квадратные уравнения";
+            tems_list[0].label = label1;
+            tems_list[0].tags = "Математика, уравнения";
+            tems_list[0].discipline = "Математика";
+            tems_list[0].difficulty = 2;
 
             for (int i = 0; i < 3; i++)
+            {
                 tems_list[i].label.Text = tems_list[i].name;
+                tems_list[i].label.Font = new Font("Arial", 15);
+                tems_list[i].label.Location = new Point(30, 50 + 40 * i);
+            }
 
             
         }
@@ -56,11 +76,17 @@ namespace Directory
             for(int i = 0; i < 3; i++)
             {
                 tems_list[i].label.Visible = true;
-                if (!tems_list[i].name.Contains(textBox1.Text) &&
-                    !tems_list[i].tags.Contains(textBox1.Text))
+                if (themeTB.Text != "" &&
+                    !tems_list[i].name.ToUpper().Contains(themeTB.Text.ToUpper()))
                     tems_list[i].label.Visible = false;
-              /*  if (!tems_list[i].tags.Contains(textBox2.Text))
-                    tems_list[i].label.Visible = false;*/ 
+
+                if (tagsTB.Text != "" &&
+                    !tems_list[i].tags.ToUpper().Contains(tagsTB.Text.ToUpper()))
+                    tems_list[i].label.Visible = false; 
+
+
+
+
             }
         }
     }

@@ -130,7 +130,7 @@ namespace Directory
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton4);
             this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Location = new System.Drawing.Point(20, 194);
+            this.panel1.Location = new System.Drawing.Point(20, 195);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(196, 188);
             this.panel1.TabIndex = 7;
@@ -150,9 +150,9 @@ namespace Directory
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(279, 175);
+            this.button2.Location = new System.Drawing.Point(355, 160);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(493, 305);
+            this.button2.Size = new System.Drawing.Size(142, 31);
             this.button2.TabIndex = 9;
             this.button2.Text = "Открыть Form2";
             this.button2.UseVisualStyleBackColor = true;
