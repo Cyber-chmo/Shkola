@@ -28,41 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.themeTB = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tagsTB = new System.Windows.Forms.TextBox();
             this.labelTag = new System.Windows.Forms.Label();
+            this.ThemeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 88);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "label2";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "label3";
             // 
             // themeTB
             // 
@@ -97,18 +68,24 @@
             this.labelTag.TabIndex = 6;
             this.labelTag.Text = "теги";
             // 
+            // ThemeLabel
+            // 
+            this.ThemeLabel.Location = new System.Drawing.Point(397, 128);
+            this.ThemeLabel.Name = "ThemeLabel";
+            this.ThemeLabel.Size = new System.Drawing.Size(327, 312);
+            this.ThemeLabel.TabIndex = 7;
+            this.ThemeLabel.Text = "label1";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 449);
+            this.Controls.Add(this.ThemeLabel);
             this.Controls.Add(this.labelTag);
             this.Controls.Add(this.tagsTB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.themeTB);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
@@ -119,13 +96,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox themeTB;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox tagsTB;
         private System.Windows.Forms.Label labelTag;
+        private System.Windows.Forms.Label ThemeLabel;
     }
 }

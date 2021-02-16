@@ -22,7 +22,7 @@ namespace Directory
     }
     public partial class Form2 : Form
     {
-        Tema[] tems_list = new Tema[3];
+        Tema[] tems_list = new Tema[300];
 
 
 
@@ -33,34 +33,34 @@ namespace Directory
             InitializeComponent();
 
             tems_list[0].name = "Квадратные уравнения";
-            tems_list[0].label = label1;
             tems_list[0].tags = "Математика, уравнения";
-            tems_list[0].discipline = "Математика";
+            tems_list[0].discipline = "Алгебра";
             tems_list[0].difficulty = 2;
 
             tems_list[1].name = "Одночлены и Многочлены";
-            tems_list[1].label = label2;
             tems_list[1].tags = "Математика, одночлены";
-            tems_list[1].discipline = "Математика";
+            tems_list[1].discipline = "Алгебра";
             tems_list[1].difficulty = 2;
 
             tems_list[2].name = "Биквадратные уравнения";
-            tems_list[2].label = label3;
             tems_list[2].tags = "Математика, уравнения";
-            tems_list[2].discipline = "Математика";
+            tems_list[2].discipline = "Алгебра";
             tems_list[2].difficulty = 4;
 
-            tems_list[0].name = "Неполные квадратные уравнения";
-            tems_list[0].label = label1;
-            tems_list[0].tags = "Математика, уравнения";
-            tems_list[0].discipline = "Математика";
-            tems_list[0].difficulty = 2;
+            tems_list[3].name = "Неполные квадратные уравнения";
+            tems_list[3].tags = "Математика, уравнения";
+            tems_list[3].discipline = "Алгебра";
+            tems_list[3].difficulty = 2;
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
+                tems_list[i].label = new Label();
+                tems_list[i].label.Size = new Size(200, 30);
                 tems_list[i].label.Text = tems_list[i].name;
-                tems_list[i].label.Font = new Font("Arial", 15);
+                tems_list[i].label.Font = new Font("Arial", 10);
                 tems_list[i].label.Location = new Point(30, 50 + 40 * i);
+                tems_list[i].label.Click += new EventHandler(ReadTheme);
+                Controls.Add(tems_list[i].label);
             }
 
             
@@ -73,7 +73,7 @@ namespace Directory
 
         private void button1_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 3; i++)
+            for (int i = 0; i < 4; i++)
             {
                 tems_list[i].label.Visible = true;
                 if (themeTB.Text != "" &&
@@ -83,10 +83,22 @@ namespace Directory
                 if (tagsTB.Text != "" &&
                     !tems_list[i].tags.ToUpper().Contains(tagsTB.Text.ToUpper()))
                     tems_list[i].label.Visible = false; 
+            }
+        }
 
+        private void ReadTheme(object sender, EventArgs e)
+        {
+            Label lbl = (Label)sender;
+            //MessageBox.Show(lbl.Text);
 
-
-
+            
+            try
+            {
+                ThemeLabel.Text = System.IO.File.ReadAllText("../../../Files/Темы/Алгебра " + lbl.Text + ".txt");
+            }
+            catch (Exception)
+            {
+                //MessageBox.Show("Такой темы нет");
             }
         }
     }
