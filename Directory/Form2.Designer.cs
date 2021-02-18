@@ -74,7 +74,6 @@
             this.ThemeLabel.Name = "ThemeLabel";
             this.ThemeLabel.Size = new System.Drawing.Size(327, 312);
             this.ThemeLabel.TabIndex = 7;
-            this.ThemeLabel.Text = "label1";
             // 
             // Form2
             // 

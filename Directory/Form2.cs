@@ -52,15 +52,21 @@ namespace Directory
             tems_list[3].discipline = "Алгебра";
             tems_list[3].difficulty = 2;
 
+            int x = 30;
+            int y = 50;
             for (int i = 0; i < 4; i++)
             {
                 tems_list[i].label = new Label();
                 tems_list[i].label.Size = new Size(200, 30);
                 tems_list[i].label.Text = tems_list[i].name;
                 tems_list[i].label.Font = new Font("Arial", 10);
-                tems_list[i].label.Location = new Point(30, 50 + 40 * i);
+                tems_list[i].label.Location = new Point(x, y);
                 tems_list[i].label.Click += new EventHandler(ReadTheme);
                 Controls.Add(tems_list[i].label);
+
+                y = y + 30;
+
+
             }
 
             
@@ -73,16 +79,31 @@ namespace Directory
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int x = 30;
+            int y = 50;
             for (int i = 0; i < 4; i++)
             {
+
+
                 tems_list[i].label.Visible = true;
                 if (themeTB.Text != "" &&
                     !tems_list[i].name.ToUpper().Contains(themeTB.Text.ToUpper()))
-                    tems_list[i].label.Visible = false;
+                {
+                     tems_list[i].label.Visible = false;
+                }
 
                 if (tagsTB.Text != "" &&
                     !tems_list[i].tags.ToUpper().Contains(tagsTB.Text.ToUpper()))
-                    tems_list[i].label.Visible = false; 
+                {
+                     tems_list[i].label.Visible = false; 
+                }
+
+                if (tems_list[i].label.Visible)
+                {
+                    tems_list[i].label.Location = new Point(x, y);
+                    y = y + 30;
+                }
+                   
             }
         }
 
