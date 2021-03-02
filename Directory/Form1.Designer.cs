@@ -150,11 +150,12 @@ namespace Directory
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(355, 160);
+            this.button2.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(379, 157);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 31);
+            this.button2.Size = new System.Drawing.Size(221, 34);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Открыть Form2";
+            this.button2.Text = "Расширенный поиск";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

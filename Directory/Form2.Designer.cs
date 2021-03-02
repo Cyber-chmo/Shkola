@@ -33,6 +33,7 @@
             this.tagsTB = new System.Windows.Forms.TextBox();
             this.labelTag = new System.Windows.Forms.Label();
             this.ThemeLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // themeTB
@@ -75,11 +76,21 @@
             this.ThemeLabel.Size = new System.Drawing.Size(327, 312);
             this.ThemeLabel.TabIndex = 7;
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 26);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Все темы:";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 449);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ThemeLabel);
             this.Controls.Add(this.labelTag);
             this.Controls.Add(this.tagsTB);
@@ -100,5 +111,6 @@
         private System.Windows.Forms.TextBox tagsTB;
         private System.Windows.Forms.Label labelTag;
         private System.Windows.Forms.Label ThemeLabel;
+        private System.Windows.Forms.Label label1;
     }
 }

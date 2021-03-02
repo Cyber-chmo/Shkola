@@ -24,18 +24,22 @@ namespace Directory
             {
                 comboBox1.Items.Clear();
                 comboBox1.Items.Add("Введение");
-                comboBox1.Items.Add("Трение");
+                comboBox1.Items.Add("Плотность");
+                comboBox1.Items.Add("Сила тяжести");
+                comboBox1.Items.Add("Архимедова сила");
+
 
                 //label3.Text = File.ReadAllText("../../../Files/Физика.txt"); 
 
-               // pictureBox1.Load("../../../Pictures/Physics1.jpg");
-              //  pictureBox2.Load("../../../Pictures/Physics2.jpg");
+                // pictureBox1.Load("../../../Pictures/Physics1.jpg");
+                //  pictureBox2.Load("../../../Pictures/Physics2.jpg");
             }
             else if (predmet == "Русский язык")
             {
                 comboBox1.Items.Clear();
                 comboBox1.Items.Add("Введение");
-                comboBox1.Items.Add("Мозговая оболочка");
+                comboBox1.Items.Add("Причастие");
+                comboBox1.Items.Add("Деепричастие");
             }
             else if (predmet == "Алгебра")
             {

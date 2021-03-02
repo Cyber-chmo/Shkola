@@ -19,11 +19,21 @@ namespace Directory
         public string discipline;
         public int difficulty;
 
+        public Tema(string _name, string _tags, string _discipline, int _difficulty)
+        {
+            name = _name;
+            picture = new PictureBox();
+            label = new Label();
+            tags = _tags;
+            discipline = _discipline;
+            difficulty = _difficulty;
+        }
+
     }
     public partial class Form2 : Form
     {
-        Tema[] tems_list = new Tema[300];
-
+        //Tema[] tems_list = new Tema[300];
+        List<Tema> tems_list = new List<Tema>();
 
 
 
@@ -31,32 +41,22 @@ namespace Directory
         public Form2()
         {
             InitializeComponent();
+            //алгебра
+            tems_list.Add(new Tema("Квадратные уравнения", "Математика, уравнения", "Алгебра", 2));
+            tems_list.Add( new Tema("Одночлены и Многочлены", "Математика, одночлены", "Алгебра", 2));
+            tems_list.Add(new Tema("Биквадратные уравнения", "Математика, уравнения", "Алгебра", 4));
+            tems_list.Add(new Tema("Неполные квадратные уравнения", "Математика, уравнения", "Алгебра", 2));
+            //физика
+            tems_list.Add(new Tema("Плотность", "Физика, механика", "Физика", 2));
+            tems_list.Add(new Tema("Сила тяжести", "Физика, механика", "Физика", 2));
+            tems_list.Add(new Tema("Давление", "Физика, механика", "Физика", 2));
+            tems_list.Add(new Tema("Архимедова сила", "Физика, механика", "Физика", 2));
 
-            tems_list[0].name = "Квадратные уравнения";
-            tems_list[0].tags = "Математика, уравнения";
-            tems_list[0].discipline = "Алгебра";
-            tems_list[0].difficulty = 2;
-
-            tems_list[1].name = "Одночлены и Многочлены";
-            tems_list[1].tags = "Математика, одночлены";
-            tems_list[1].discipline = "Алгебра";
-            tems_list[1].difficulty = 2;
-
-            tems_list[2].name = "Биквадратные уравнения";
-            tems_list[2].tags = "Математика, уравнения";
-            tems_list[2].discipline = "Алгебра";
-            tems_list[2].difficulty = 4;
-
-            tems_list[3].name = "Неполные квадратные уравнения";
-            tems_list[3].tags = "Математика, уравнения";
-            tems_list[3].discipline = "Алгебра";
-            tems_list[3].difficulty = 2;
 
             int x = 30;
             int y = 50;
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < tems_list.Count; i++)
             {
-                tems_list[i].label = new Label();
                 tems_list[i].label.Size = new Size(200, 30);
                 tems_list[i].label.Text = tems_list[i].name;
                 tems_list[i].label.Font = new Font("Arial", 10);
@@ -65,11 +65,7 @@ namespace Directory
                 Controls.Add(tems_list[i].label);
 
                 y = y + 30;
-
-
-            }
-
-            
+            }            
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -81,10 +77,8 @@ namespace Directory
         {
             int x = 30;
             int y = 50;
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < tems_list.Count; i++)
             {
-
-
                 tems_list[i].label.Visible = true;
                 if (themeTB.Text != "" &&
                     !tems_list[i].name.ToUpper().Contains(themeTB.Text.ToUpper()))
