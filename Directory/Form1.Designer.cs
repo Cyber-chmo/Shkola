@@ -130,6 +130,7 @@ namespace Directory
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Controls.Add(this.radioButton4);
             this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panel1.Location = new System.Drawing.Point(20, 195);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(196, 188);
@@ -138,6 +139,7 @@ namespace Directory
             // button1
             // 
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(18, 388);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
@@ -150,6 +152,7 @@ namespace Directory
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(485, 155);
             this.button2.Name = "button2";
