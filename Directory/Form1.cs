@@ -80,7 +80,7 @@ namespace Directory
 
         private void button2_Click(object sender, EventArgs e)
         {
-           Form2 lesch = new Form2();
+            AllThemes lesch = new AllThemes();
             lesch.Show();
         }
     }

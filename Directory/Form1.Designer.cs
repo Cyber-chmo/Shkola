@@ -150,8 +150,8 @@ namespace Directory
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe Script", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(379, 157);
+            this.button2.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(485, 155);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(221, 34);
             this.button2.TabIndex = 9;
@@ -169,6 +169,7 @@ namespace Directory
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Nirmala UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Form1";
             this.Text = "Справочник за 7-8 классы";
             this.Load += new System.EventHandler(this.Form1_Load);
