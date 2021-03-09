@@ -33,14 +33,13 @@ namespace Directory
     public partial class AllThemes : Form
     {
         //Tema[] tems_list = new Tema[300];
-        List<Tema> tems_list = new List<Tema>();
+        /// <summary>
+        /// Все темы программы
+        /// </summary>
+        public static List<Tema> tems_list = new List<Tema>();
 
-
-
-
-        public AllThemes()
+        public static void FillThemes()
         {
-            InitializeComponent();
             //алгебра
             tems_list.Add(new Tema("Квадратные уравнения", "Математика, уравнения", "Алгебра", 2));
             tems_list.Add(new Tema("Одночлены и Многочлены", "Математика, одночлены", "Алгебра", 2));
@@ -51,7 +50,22 @@ namespace Directory
             tems_list.Add(new Tema("Сила тяжести", "Физика, механика", "Физика", 2));
             tems_list.Add(new Tema("Давление", "Физика, механика", "Физика", 2));
             tems_list.Add(new Tema("Архимедова сила", "Физика, механика", "Физика", 2));
+            //Русский язык
+            tems_list.Add(new Tema("Причастие", "Русский язык", "Русский язык", 2));
+            tems_list.Add(new Tema("Деепричастие", "Русский язык", "Русский язык", 2));
+            tems_list.Add(new Tema("Обобщающие слова", "Русский язык", "Русский язык", 2));
+            tems_list.Add(new Tema("Односоставные предложения", "Русский язык", "Русский язык", 2));
+            //Химия
 
+
+
+
+
+        }
+
+        public AllThemes()
+        {
+            InitializeComponent();
 
             int x = 30;
             int y = 50;
@@ -105,15 +119,16 @@ namespace Directory
         {
             Label lbl = (Label)sender;
             //MessageBox.Show(lbl.Text);
-
-            
-            try
-            {
-                ThemeLabel.Text = System.IO.File.ReadAllText("../../../Files/Темы/Алгебра " + lbl.Text + ".txt");
-            }
-            catch (Exception)
-            {
-                //MessageBox.Show("Такой темы нет");
+            for (int i = 0; i < tems_list.Count; i++)
+            { 
+                try
+                {
+                    ThemeLabel.Text = System.IO.File.ReadAllText("../../../Files/Темы/" + tems_list[i].discipline + " " + lbl.Text + ".txt");
+                }
+                catch (Exception)
+                {
+                    //MessageBox.Show("Такой темы нет");
+                }
             }
         }
     }

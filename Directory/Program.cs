@@ -16,6 +16,8 @@ namespace Directory
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            AllThemes.FillThemes();
             Application.Run(new Form1());
         }
     }

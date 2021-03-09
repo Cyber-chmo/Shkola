@@ -106,3 +106,15 @@ C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.csproj.CoreC
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.exe
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.pdb
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.AllThemes.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.AllThemes.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.DisciplineForm.resources

@@ -21,7 +21,7 @@ namespace Directory
         {
             if (rb.Checked)
             {
-                PhysicsForm klesch = new PhysicsForm(rb.Text);
+                DisciplineForm klesch = new DisciplineForm(rb.Text);
                 klesch.Show();
             }
         }
