@@ -56,8 +56,7 @@ namespace Directory
             tems_list.Add(new Tema("Обобщающие слова", "Русский язык", "Русский язык", 2));
             tems_list.Add(new Tema("Односоставные предложения", "Русский язык", "Русский язык", 2));
             //Химия
-
-
+           
 
 
 
@@ -68,7 +67,7 @@ namespace Directory
             InitializeComponent();
 
             int x = 30;
-            int y = 50;
+            int y = 10;
             for (int i = 0; i < tems_list.Count; i++)
             {
                 tems_list[i].label.Size = new Size(200, 30);
@@ -76,7 +75,7 @@ namespace Directory
                 tems_list[i].label.Font = new Font("Arial", 10);
                 tems_list[i].label.Location = new Point(x, y);
                 tems_list[i].label.Click += new EventHandler(ReadTheme);
-                Controls.Add(tems_list[i].label);
+                panel1.Controls.Add(tems_list[i].label);
 
                 y = y + 30;
             }            
@@ -119,15 +118,18 @@ namespace Directory
         {
             Label lbl = (Label)sender;
             //MessageBox.Show(lbl.Text);
-            for (int i = 0; i < tems_list.Count; i++)
-            { 
-                try
+            foreach (Tema tema in tems_list)
+            {
+                if (lbl.Text == tema.name)
                 {
-                    ThemeLabel.Text = System.IO.File.ReadAllText("../../../Files/Темы/" + tems_list[i].discipline + " " + lbl.Text + ".txt");
-                }
-                catch (Exception)
-                {
-                    //MessageBox.Show("Такой темы нет");
+                    try
+                    {
+                        ThemeLabel.Text = System.IO.File.ReadAllText("../../../Files/Темы/" + tema.discipline + " " + lbl.Text + ".txt");
+                    }
+                    catch (Exception)
+                    {
+                        ThemeLabel.Text = "Такой темы нет";
+                    }
                 }
             }
         }

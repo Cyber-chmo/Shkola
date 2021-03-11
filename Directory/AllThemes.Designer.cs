@@ -34,6 +34,7 @@
             this.labelTag = new System.Windows.Forms.Label();
             this.ThemeLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // themeTB
@@ -64,7 +65,7 @@
             // labelTag
             // 
             this.labelTag.AutoSize = true;
-            this.labelTag.Location = new System.Drawing.Point(394, 72);
+            this.labelTag.Location = new System.Drawing.Point(400, 75);
             this.labelTag.Name = "labelTag";
             this.labelTag.Size = new System.Drawing.Size(29, 13);
             this.labelTag.TabIndex = 6;
@@ -86,11 +87,20 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Все темы:";
             // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.Location = new System.Drawing.Point(13, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(381, 359);
+            this.panel1.TabIndex = 9;
+            // 
             // AllThemes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 449);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ThemeLabel);
             this.Controls.Add(this.labelTag);
@@ -113,5 +123,6 @@
         private System.Windows.Forms.Label labelTag;
         private System.Windows.Forms.Label ThemeLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
