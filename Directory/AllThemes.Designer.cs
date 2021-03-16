@@ -73,7 +73,7 @@
             // 
             // ThemeLabel
             // 
-            this.ThemeLabel.Location = new System.Drawing.Point(397, 128);
+            this.ThemeLabel.Location = new System.Drawing.Point(400, 114);
             this.ThemeLabel.Name = "ThemeLabel";
             this.ThemeLabel.Size = new System.Drawing.Size(327, 312);
             this.ThemeLabel.TabIndex = 7;

@@ -12,6 +12,10 @@ namespace Directory
 {
     public partial class DisciplineForm : Form
     {
+        /// <summary>
+        /// Выбранная тема
+        /// </summary>
+        Tema tema;
         public DisciplineForm(string predmet)
         {
             InitializeComponent();
@@ -42,16 +46,31 @@ namespace Directory
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.Text != "")
-            { 
+            {
                 try
                 {
                     label3.Text = File.ReadAllText("../../../Files/Темы/" + label1.Text + " " + comboBox1.Text + ".txt");
                 }
-                catch (Exception) 
+                catch (Exception)
                 {
                     MessageBox.Show("Такой темы нет");
                 }
             }
+
+
+            foreach (Tema tm in AllThemes.tems_list)
+            {
+                if (tm.discipline == label1.Text && 
+                    tm.name == comboBox1.Text)
+                {
+                    tema = tm;
+                }
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            AllThemes.readLater.Add(tema);
         }
     }
 }

@@ -118,3 +118,4 @@ C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.csproj.
 C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.exe
 C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.pdb
 C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.DisciplineForm.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.ReadLaterForm.resources

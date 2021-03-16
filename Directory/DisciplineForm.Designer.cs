@@ -36,7 +36,7 @@ namespace Directory
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -115,21 +115,23 @@ namespace Directory
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
-            // label4
+            // button1
             // 
-            this.label4.Location = new System.Drawing.Point(268, 230);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(516, 333);
-            this.label4.TabIndex = 9;
-            this.label4.Visible = false;
+            this.button1.Location = new System.Drawing.Point(548, 437);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(206, 73);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Прочитать позже";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // PhysicsForm
+            // DisciplineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox1);
@@ -142,7 +144,7 @@ namespace Directory
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
-            this.Name = "PhysicsForm";
+            this.Name = "DisciplineForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "PhysicsForm";
             this.Load += new System.EventHandler(this.PhysicsForm_Load);
@@ -162,6 +164,6 @@ namespace Directory
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button1;
     }
 }

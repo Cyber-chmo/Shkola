@@ -34,43 +34,6 @@ namespace Directory
                 if (ctrl is RadioButton)
                     OpenPredmet((RadioButton)ctrl);
             }
-
-
-            /*
-            OpenPredmet(radioButton4);
-            OpenPredmet(radioButton1);
-            OpenPredmet(radioButton2);
-            OpenPredmet(radioButton3);
-            OpenPredmet(radioButton5);
-
-            if (radioButtonPhysics.Checked)
-            {
-                PhysicsForm form = new PhysicsForm(radioButtonPhysics.Text);
-                form.Show();
-            }
-            if (radioButton1.Checked)
-            {
-                PhysicsForm form = new PhysicsForm("Русский язык");
-                form.Show();
-            }
-            if (radioButton2.Checked)
-            {
-                PhysicsForm form = new PhysicsForm("Алгебра");
-                form.Show();
-            }
-            if (radioButton3.Checked)
-            {
-                PhysicsForm form = new PhysicsForm("Геометрия");
-                form.Show();
-            }
-            if (radioButton5.Checked)
-            {
-                PhysicsForm form = new PhysicsForm("Химия");
-                form.Show();
-            }*/
-
-
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -80,8 +43,17 @@ namespace Directory
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //int x = 100;
             AllThemes lesch = new AllThemes();
             lesch.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // new ReadLaterForm().Show();
+            ReadLaterForm aaa = new ReadLaterForm();
+            aaa.Show();
+
         }
     }
 }

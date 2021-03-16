@@ -33,10 +33,17 @@ namespace Directory
     public partial class AllThemes : Form
     {
         //Tema[] tems_list = new Tema[300];
+
         /// <summary>
         /// Все темы программы
         /// </summary>
         public static List<Tema> tems_list = new List<Tema>();
+        /// <summary>
+        /// Читать позже
+        /// </summary>
+        public static List<Tema> readLater = new List<Tema>();
+
+
 
         public static void FillThemes()
         {
