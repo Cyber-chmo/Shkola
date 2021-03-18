@@ -42,6 +42,11 @@ namespace Directory
         /// Читать позже
         /// </summary>
         public static List<Tema> readLater = new List<Tema>();
+        
+        /// <summary>
+        /// Темы, которые тут выводятся (все или отложенные)
+        /// </summary>
+        List<Tema> themes = new List<Tema>();
 
 
 
@@ -69,20 +74,32 @@ namespace Directory
 
         }
 
-        public AllThemes()
+        public AllThemes(string s)
         {
+            if (s == "Все темы")
+                for (int i = 0; i < tems_list.Count; i++)
+                {
+                    themes.Add(tems_list[i]);
+                }
+            else
+                for (int i = 0; i < readLater.Count; i++)
+                {
+                    Tema tema = new Tema(readLater[i].name, readLater[i].tags, readLater[i].discipline, readLater[i].difficulty);
+                    themes.Add(tema);
+                }
+
             InitializeComponent();
 
             int x = 30;
             int y = 10;
-            for (int i = 0; i < tems_list.Count; i++)
+            for (int i = 0; i < themes.Count; i++)
             {
-                tems_list[i].label.Size = new Size(200, 30);
-                tems_list[i].label.Text = tems_list[i].name;
-                tems_list[i].label.Font = new Font("Arial", 10);
-                tems_list[i].label.Location = new Point(x, y);
-                tems_list[i].label.Click += new EventHandler(ReadTheme);
-                panel1.Controls.Add(tems_list[i].label);
+                themes[i].label.Size = new Size(200, 30);
+                themes[i].label.Text = themes[i].name;
+                themes[i].label.Font = new Font("Arial", 10);
+                themes[i].label.Location = new Point(x, y);
+                themes[i].label.Click += new EventHandler(ReadTheme);
+                panel1.Controls.Add(themes[i].label);
 
                 y = y + 30;
             }            
@@ -97,24 +114,24 @@ namespace Directory
         {
             int x = 30;
             int y = 50;
-            for (int i = 0; i < tems_list.Count; i++)
+            for (int i = 0; i < themes.Count; i++)
             {
-                tems_list[i].label.Visible = true;
+                themes[i].label.Visible = true;
                 if (themeTB.Text != "" &&
-                    !tems_list[i].name.ToUpper().Contains(themeTB.Text.ToUpper()))
+                    !themes[i].name.ToUpper().Contains(themeTB.Text.ToUpper()))
                 {
-                     tems_list[i].label.Visible = false;
+                    themes[i].label.Visible = false;
                 }
 
                 if (tagsTB.Text != "" &&
-                    !tems_list[i].tags.ToUpper().Contains(tagsTB.Text.ToUpper()))
+                    !themes[i].tags.ToUpper().Contains(tagsTB.Text.ToUpper()))
                 {
-                     tems_list[i].label.Visible = false; 
+                    themes[i].label.Visible = false; 
                 }
 
-                if (tems_list[i].label.Visible)
+                if (themes[i].label.Visible)
                 {
-                    tems_list[i].label.Location = new Point(x, y);
+                    themes[i].label.Location = new Point(x, y);
                     y = y + 30;
                 }
                    
@@ -125,7 +142,7 @@ namespace Directory
         {
             Label lbl = (Label)sender;
             //MessageBox.Show(lbl.Text);
-            foreach (Tema tema in tems_list)
+            foreach (Tema tema in themes)
             {
                 if (lbl.Text == tema.name)
                 {

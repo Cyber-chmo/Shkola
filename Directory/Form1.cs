@@ -44,15 +44,15 @@ namespace Directory
         private void button2_Click(object sender, EventArgs e)
         {
             //int x = 100;
-            AllThemes lesch = new AllThemes();
+            AllThemes lesch = new AllThemes("Все темы");
             lesch.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             // new ReadLaterForm().Show();
-            ReadLaterForm aaa = new ReadLaterForm();
-            aaa.Show();
+            AllThemes lesch = new AllThemes("Читать позже");
+            lesch.Show();
 
         }
     }
