@@ -113,7 +113,7 @@ namespace Directory
         private void button1_Click(object sender, EventArgs e)
         {
             int x = 30;
-            int y = 50;
+            int y = 10;
             for (int i = 0; i < themes.Count; i++)
             {
                 themes[i].label.Visible = true;
@@ -156,6 +156,12 @@ namespace Directory
                     }
                 }
             }
+        }
+
+        private void themeTB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(null, null);
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllThemes));
             this.themeTB = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tagsTB = new System.Windows.Forms.TextBox();
@@ -43,6 +44,7 @@
             this.themeTB.Name = "themeTB";
             this.themeTB.Size = new System.Drawing.Size(188, 20);
             this.themeTB.TabIndex = 3;
+            this.themeTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.themeTB_KeyDown);
             // 
             // button1
             // 
@@ -107,6 +109,7 @@
             this.Controls.Add(this.tagsTB);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.themeTB);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "AllThemes";
             this.Text = "Form2";
