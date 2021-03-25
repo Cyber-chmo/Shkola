@@ -163,5 +163,11 @@ namespace Directory
             if (e.KeyCode == Keys.Enter)
                 button1_Click(null, null);
         }
+
+        private void tagsTB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(null, null);
+        }
     }
 }
