@@ -12,11 +12,23 @@ namespace Directory
 {
     public partial class ReadLaterForm : Form
     {
+
+
+
+
+
+
+
+
         public ReadLaterForm()
         {
             InitializeComponent();
 
 
+
+
+
+            /*
             int x = 30;
             int y = 10;
             for (int i = 0; i < AllThemes.readLater.Count; i++)
@@ -30,12 +42,7 @@ namespace Directory
                 panel1.Controls.Add(label);
 
                 y = y + 30;
-            }
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
+            }*/
         }
     }
 }

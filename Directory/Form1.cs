@@ -12,10 +12,32 @@ namespace Directory
 {
     public partial class Form1 : Form
     {
+        public static Dictionary<string, string> EngWords = new Dictionary<string, string>();
+        public static Dictionary<string, string> RusWords = new Dictionary<string, string>();
+        public static string language = "Русский"; 
         public Form1()
         {
             InitializeComponent();
+            //Заполнение словарей
+            EngWords.Add("Расширенный поиск", "Global Search");
+            EngWords.Add("Выбор предмета:", "Choose the subject");
+            EngWords.Add("Поиск", "Search");
+            EngWords.Add("Смотреть позже", "Read later");
+
+            RusWords.Add("Расширенный поиск", "Расширенный поиск");
+            RusWords.Add("Выбор предмета:", "Выбор предмета:");
+            RusWords.Add("Поиск", "Поиск");
+            RusWords.Add("Смотреть позже", "Смотреть позже");
         }
+
+        void translate (Dictionary<string, string> Words)
+        {
+            label2.Text = Words["Выбор предмета:"];
+            button2.Text = Words["Расширенный поиск"];
+            button1.Text = Words["Поиск"];
+            button3.Text = Words["Смотреть позже"];
+        }
+        
 
         void OpenPredmet(RadioButton rb)
         {
@@ -54,6 +76,18 @@ namespace Directory
             AllThemes lesch = new AllThemes("Читать позже");
             lesch.Show();
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            language = "Русский";
+            translate(RusWords);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            language = "Английский";
+            translate(EngWords);
         }
     }
 }

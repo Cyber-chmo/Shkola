@@ -74,6 +74,14 @@ namespace Directory
 
         }
 
+        void translate (Dictionary<string, string> Words)
+        {
+            label2.Text = Words["Выбор предмета:"];
+            //button2.Text = Words["Расширенный поиск"];
+            button1.Text = Words["Поиск"];
+            //button3.Text = Words["Смотреть позже"];
+        }
+
         public AllThemes(string s)
         {
             if (s == "Все темы")
@@ -89,6 +97,17 @@ namespace Directory
                 }
 
             InitializeComponent();
+
+
+            if (Form1.language == "Английский")
+            {
+                translate(Form1.EngWords);
+            }
+            else if (Form1.language == "Русский")
+            {
+                translate(Form1.RusWords);
+            }
+
 
             int x = 30;
             int y = 10;
