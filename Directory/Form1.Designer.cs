@@ -185,7 +185,7 @@ namespace Directory
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(348, 345);
+            this.button4.Location = new System.Drawing.Point(661, 504);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(45, 45);
             this.button4.TabIndex = 11;
@@ -196,7 +196,7 @@ namespace Directory
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(399, 345);
+            this.button5.Location = new System.Drawing.Point(712, 504);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(45, 45);
             this.button5.TabIndex = 12;
@@ -223,6 +223,7 @@ namespace Directory
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Справочник за 7-8 классы";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

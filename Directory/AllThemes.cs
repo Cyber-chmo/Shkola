@@ -18,8 +18,9 @@ namespace Directory
         public string tags;
         public string discipline;
         public int difficulty;
+        public string link;
 
-        public Tema(string _name, string _tags, string _discipline, int _difficulty)
+        public Tema(string _name, string _tags, string _discipline, int _difficulty, string _link)
         {
             name = _name;
             picture = new PictureBox();
@@ -27,6 +28,7 @@ namespace Directory
             tags = _tags;
             discipline = _discipline;
             difficulty = _difficulty;
+            link = _link;
         }
 
     }
@@ -53,22 +55,22 @@ namespace Directory
         public static void FillThemes()
         {
             //алгебра
-            tems_list.Add(new Tema("Квадратные уравнения", "Математика, уравнения", "Алгебра", 2));
-            tems_list.Add(new Tema("Одночлены и Многочлены", "Математика, одночлены", "Алгебра", 2));
-            tems_list.Add(new Tema("Биквадратные уравнения", "Математика, уравнения", "Алгебра", 4));
-            tems_list.Add(new Tema("Неполные квадратные уравнения", "Математика, уравнения", "Алгебра", 2));
+            tems_list.Add(new Tema("Квадратные уравнения", "Математика, уравнения", "Алгебра", 2, ""));
+            tems_list.Add(new Tema("Одночлены и Многочлены", "Математика, одночлены", "Алгебра", 2, ""));
+            tems_list.Add(new Tema("Биквадратные уравнения", "Математика, уравнения", "Алгебра", 4, ""));
+            tems_list.Add(new Tema("Неполные квадратные уравнения", "Математика, уравнения", "Алгебра", 2, ""));
             //физика
-            tems_list.Add(new Tema("Плотность", "Физика, механика", "Физика", 2));
-            tems_list.Add(new Tema("Сила тяжести", "Физика, механика", "Физика", 2));
-            tems_list.Add(new Tema("Давление", "Физика, механика", "Физика", 2));
-            tems_list.Add(new Tema("Архимедова сила", "Физика, механика", "Физика", 2));
+            tems_list.Add(new Tema("Плотность", "Физика, механика", "Физика", 2, ""));
+            tems_list.Add(new Tema("Сила тяжести", "Физика, механика", "Физика", 2, ""));
+            tems_list.Add(new Tema("Давление", "Физика, механика", "Физика", 2, ""));
+            tems_list.Add(new Tema("Архимедова сила", "Физика, механика", "Физика", 2, ""));
             //Русский язык
-            tems_list.Add(new Tema("Причастие", "Русский язык", "Русский язык", 2));
-            tems_list.Add(new Tema("Деепричастие", "Русский язык", "Русский язык", 2));
-            tems_list.Add(new Tema("Обобщающие слова", "Русский язык", "Русский язык", 2));
-            tems_list.Add(new Tema("Односоставные предложения", "Русский язык", "Русский язык", 2));
+            tems_list.Add(new Tema("Причастие", "Русский язык", "Русский язык", 2, ""));
+            tems_list.Add(new Tema("Деепричастие", "Русский язык", "Русский язык", 2, ""));
+            tems_list.Add(new Tema("Обобщающие слова", "Русский язык", "Русский язык", 2, ""));
+            tems_list.Add(new Tema("Односоставные предложения", "Русский язык", "Русский язык", 2, ""));
             //Химия
-           
+            tems_list.Add(new Tema("Количество вещества", "Химия", "Химия", 2, "https://www.yaklass.ru/p/himija/89-klass/raschetnye-zadachi-po-khimii-14608/vychislenie-kolichestva-veshchestva-227644/re-43cb784f-e2d0-437e-a4a8-8b32bf44060b"));
 
 
 
@@ -80,6 +82,8 @@ namespace Directory
             //button2.Text = Words["Расширенный поиск"];
             button1.Text = Words["Поиск"];
             //button3.Text = Words["Смотреть позже"];
+
+            System.Diagnostics.Process.Start("https://google.com");
         }
 
         public AllThemes(string s)
@@ -92,7 +96,7 @@ namespace Directory
             else
                 for (int i = 0; i < readLater.Count; i++)
                 {
-                    Tema tema = new Tema(readLater[i].name, readLater[i].tags, readLater[i].discipline, readLater[i].difficulty);
+                    Tema tema = new Tema(readLater[i].name, readLater[i].tags, readLater[i].discipline, readLater[i].difficulty, readLater[i].link);
                     themes.Add(tema);
                 }
 

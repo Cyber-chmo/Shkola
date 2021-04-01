@@ -28,6 +28,10 @@ namespace Directory
             RusWords.Add("Выбор предмета:", "Выбор предмета:");
             RusWords.Add("Поиск", "Поиск");
             RusWords.Add("Смотреть позже", "Смотреть позже");
+
+            language = Properties.Settings.Default.language;
+            if (language == "Английский")
+                translate(EngWords);
         }
 
         void translate (Dictionary<string, string> Words)
@@ -88,6 +92,12 @@ namespace Directory
         {
             language = "Английский";
             translate(EngWords);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.language = language;
+            Properties.Settings.Default.Save();
         }
     }
 }
