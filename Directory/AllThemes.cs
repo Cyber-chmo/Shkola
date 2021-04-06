@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +35,7 @@ namespace Directory
     }
     public partial class AllThemes : Form
     {
-        //Tema[] tems_list = new Tema[300];
+        //Tema[] tems_list123 = new Tema[300];
 
         /// <summary>
         /// Все темы программы
@@ -54,6 +55,19 @@ namespace Directory
 
         public static void FillThemes()
         {
+            string[] lines = File.ReadAllLines("../../../Files/Список.txt");
+            foreach(string line in lines)
+            {
+                string[] parts = line.Split(new string[] {"; "}, StringSplitOptions.None) ;
+                if (parts.Length > 4)
+                    tems_list.Add(new Tema(parts[0], parts[1], parts[2], Convert.ToInt32(parts[3]), parts[4])); 
+            }   
+
+
+
+
+
+            /*
             //алгебра
             tems_list.Add(new Tema("Квадратные уравнения", "Математика, уравнения", "Алгебра", 2, ""));
             tems_list.Add(new Tema("Одночлены и Многочлены", "Математика, одночлены", "Алгебра", 2, ""));
@@ -72,7 +86,7 @@ namespace Directory
             //Химия
             tems_list.Add(new Tema("Количество вещества", "Химия", "Химия", 2, "https://www.yaklass.ru/p/himija/89-klass/raschetnye-zadachi-po-khimii-14608/vychislenie-kolichestva-veshchestva-227644/re-43cb784f-e2d0-437e-a4a8-8b32bf44060b"));
 
-
+            */
 
         }
 
@@ -83,7 +97,7 @@ namespace Directory
             button1.Text = Words["Поиск"];
             //button3.Text = Words["Смотреть позже"];
 
-            System.Diagnostics.Process.Start("https://google.com");
+          //  System.Diagnostics.Process.Start("https://google.com");
         }
 
         public AllThemes(string s)

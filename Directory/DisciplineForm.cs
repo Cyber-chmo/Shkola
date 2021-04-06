@@ -15,7 +15,7 @@ namespace Directory
         /// <summary>
         /// Выбранная тема
         /// </summary>
-        Tema tema;
+        Tema tema = new Tema();
         public DisciplineForm(string predmet)
         {
             InitializeComponent();
@@ -71,6 +71,14 @@ namespace Directory
         private void button1_Click_1(object sender, EventArgs e)
         {
             AllThemes.readLater.Add(tema);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(tema.link))//tema.link =="" && tema.link == Null
+                System.Diagnostics.Process.Start(tema.link);
+            else
+                MessageBox.Show("Нет никакого источника. Я придумал физику");
         }
     }
 }
