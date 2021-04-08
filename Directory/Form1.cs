@@ -99,5 +99,11 @@ namespace Directory
             Properties.Settings.Default.language = language;
             Properties.Settings.Default.Save();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AddTema addtema = new AddTema();
+            addtema.Show();
+        }
     }
 }
