@@ -71,14 +71,14 @@ namespace Directory
         {
             //int x = 100;
             AllThemes lesch = new AllThemes("Все темы");
-            lesch.Show();
+            lesch.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             // new ReadLaterForm().Show();
             AllThemes lesch = new AllThemes("Читать позже");
-            lesch.Show();
+            lesch.ShowDialog();
 
         }
 

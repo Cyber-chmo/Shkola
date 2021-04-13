@@ -26,7 +26,18 @@ namespace Directory
 
             File.WriteAllText("../../../Files/Темы/" + disciplineCombo.Text + " " + nameTB.Text + ".txt", textBox4.Text);
 
+
+
+
+
             MessageBox.Show("Тема сохранена");
+
+            nameTB.Text = "";
+            textBox1.Text = "";
+            disciplineCombo.Text = "";
+            domainUpDown1.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
         }
     }
 }
