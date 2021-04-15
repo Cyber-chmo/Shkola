@@ -105,5 +105,27 @@ namespace Directory
             AddTema addtema = new AddTema();
             addtema.Show();
         }
+
+
+
+        
+        int startTime = 0;
+        private void хочуДобавитьТемуToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+             
+
+            button6.Visible = true;
+            startTime = Environment.TickCount;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int currentTime = Environment.TickCount;
+            label4.Text = DateTime.Now.ToLongTimeString(); 
+
+            if (currentTime - startTime > 3000)
+                button6.Visible = false;
+        }
+        
     }
 }

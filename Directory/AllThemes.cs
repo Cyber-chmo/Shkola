@@ -117,14 +117,6 @@ namespace Directory
             InitializeComponent();
 
 
-            if (Form1.language == "Английский")
-            {
-                translate(Form1.EngWords);
-            }
-            else if (Form1.language == "Русский")
-            {
-                translate(Form1.RusWords);
-            }
 
 
             int x = 30;
@@ -141,6 +133,7 @@ namespace Directory
                 y = y + 30;
             }            
         }
+
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -205,6 +198,11 @@ namespace Directory
         {
             if (e.KeyCode == Keys.Enter)
                 button1_Click(null, null);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+           
         }
     }
 }

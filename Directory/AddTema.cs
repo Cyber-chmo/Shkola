@@ -39,5 +39,26 @@ namespace Directory
             textBox3.Text = "";
             textBox4.Text = "";
         }
+        void translate(Dictionary<string, string> Words)
+        {
+            label2.Text = Words["Выбор предмета:"];
+            //button2.Text = Words["Расширенный поиск"];
+            button1.Text = Words["Поиск"];
+            //button3.Text = Words["Смотреть позже"];
+
+            //  System.Diagnostics.Process.Start("https://google.com");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (Form1.language == "Английский")
+            {
+                translate(Form1.EngWords);
+            }
+            else if (Form1.language == "Русский")
+            {
+                translate(Form1.RusWords);
+            }
+        }
     }
 }
