@@ -121,3 +121,4 @@ C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.ReadLat
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.DisciplineForm.resources
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.ReadLaterForm.resources
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.AddTema.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.UserControl1.resources

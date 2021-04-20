@@ -34,12 +34,12 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tagsTB = new System.Windows.Forms.TextBox();
             this.labelTag = new System.Windows.Forms.Label();
-            this.ThemeLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // themeTB
@@ -81,13 +81,6 @@
             this.labelTag.TabIndex = 6;
             this.labelTag.Text = "Предмет\r\n";
             // 
-            // ThemeLabel
-            // 
-            this.ThemeLabel.Location = new System.Drawing.Point(397, 128);
-            this.ThemeLabel.Name = "ThemeLabel";
-            this.ThemeLabel.Size = new System.Drawing.Size(327, 312);
-            this.ThemeLabel.TabIndex = 7;
-            // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -100,10 +93,12 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Location = new System.Drawing.Point(13, 39);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(365, 359);
+            this.panel1.Size = new System.Drawing.Size(310, 359);
             this.panel1.TabIndex = 9;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label2
             // 
@@ -130,17 +125,24 @@
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(388, 120);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(334, 317);
+            this.panel2.TabIndex = 12;
+            // 
             // AllThemes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(736, 449);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ThemeLabel);
             this.Controls.Add(this.labelTag);
             this.Controls.Add(this.tagsTB);
             this.Controls.Add(this.button1);
@@ -160,11 +162,11 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox tagsTB;
         private System.Windows.Forms.Label labelTag;
-        private System.Windows.Forms.Label ThemeLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

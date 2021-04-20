@@ -167,6 +167,7 @@ namespace Directory
                    
             }
         }
+        UserControl1 uc;
 
         private void ReadTheme(object sender, EventArgs e)
         {
@@ -176,14 +177,10 @@ namespace Directory
             {
                 if (lbl.Text == tema.name)
                 {
-                    try
-                    {
-                        ThemeLabel.Text = System.IO.File.ReadAllText("../../../Files/Темы/" + tema.discipline + " " + lbl.Text + ".txt");
-                    }
-                    catch (Exception)
-                    {
-                        ThemeLabel.Text = "Такой темы нет";
-                    }
+                    UserControl1 uc = new UserControl1(tema);
+                    uc.Dock = DockStyle.Fill;
+                    panel2.Controls.Clear();
+                    panel2.Controls.Add(uc);
                 }
             }
         }
@@ -203,6 +200,11 @@ namespace Directory
         private void timer1_Tick(object sender, EventArgs e)
         {
            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

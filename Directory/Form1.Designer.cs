@@ -217,7 +217,7 @@ namespace Directory
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(485, 322);
+            this.button6.Location = new System.Drawing.Point(485, 323);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(221, 31);
             this.button6.TabIndex = 13;
@@ -241,7 +241,7 @@ namespace Directory
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.хочуДобавитьТемуToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(184, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(184, 26);
             // 
             // хочуДобавитьТемуToolStripMenuItem
             // 
@@ -258,7 +258,7 @@ namespace Directory
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(405, 509);
+            this.label4.Location = new System.Drawing.Point(398, 504);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 15;
