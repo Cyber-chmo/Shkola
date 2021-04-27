@@ -28,21 +28,25 @@ namespace Directory
 
 
 
-            /*
+
             int x = 30;
             int y = 10;
+            Controls.Clear();
             for (int i = 0; i < AllThemes.readLater.Count; i++)
             {
-                Label label = new Label();
-                label.Size = AllThemes.readLater[i].label.Size;
-                label.Text = AllThemes.readLater[i].name;
-                label.Font = new Font("Arial", 10);
-                label.Location = new Point(x, y);
-               // AllThemes.readLater[i].label.Click += new EventHandler(ReadTheme);
-                panel1.Controls.Add(label);
+                UserControl1 uc = new UserControl1(AllThemes.readLater[i]);
+                uc.Location = new Point(x, y);
+                
+                // uc.Dock = DockStyle.Fill;
+                Controls.Add(uc);
 
-                y = y + 30;
-            }*/
+                x = x + 400;
+                if (x > Width)
+                {
+                    x = 30;
+                    y = y + 380;
+                }
+            }
         }
     }
 }

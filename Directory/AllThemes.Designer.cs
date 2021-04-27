@@ -127,9 +127,9 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(388, 120);
+            this.panel2.Location = new System.Drawing.Point(378, 120);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(334, 317);
+            this.panel2.Size = new System.Drawing.Size(344, 317);
             this.panel2.TabIndex = 12;
             // 
             // AllThemes

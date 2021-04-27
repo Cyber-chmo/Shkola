@@ -126,6 +126,17 @@ namespace Directory
             if (currentTime - startTime > 3000)
                 button6.Visible = false;
         }
-        
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            ReadLaterForm RL = new ReadLaterForm();
+            RL.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            AuthForm AF = new AuthForm();
+            AF.ShowDialog();
+        }
     }
 }

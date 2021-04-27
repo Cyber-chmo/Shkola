@@ -20,8 +20,9 @@ namespace Directory
         public string discipline;
         public int difficulty;
         public string link;
+        public string BookLink;
 
-        public Tema(string _name, string _tags, string _discipline, int _difficulty, string _link)
+        public Tema(string _name, string _tags, string _discipline, int _difficulty, string _link, string _BookLink)
         {
             name = _name;
             picture = new PictureBox();
@@ -30,6 +31,7 @@ namespace Directory
             discipline = _discipline;
             difficulty = _difficulty;
             link = _link;
+            BookLink = _BookLink;
         }
 
     }
@@ -59,8 +61,10 @@ namespace Directory
             foreach(string line in lines)
             {
                 string[] parts = line.Split(new string[] {"; "}, StringSplitOptions.None) ;
-                if (parts.Length > 4)
-                    tems_list.Add(new Tema(parts[0], parts[1], parts[2], Convert.ToInt32(parts[3]), parts[4])); 
+                if (parts.Length > 5)
+                    tems_list.Add(new Tema(parts[0], parts[1], parts[2], Convert.ToInt32(parts[3]), parts[4], parts[5]));
+               else if (parts.Length > 4)
+                    tems_list.Add(new Tema(parts[0], parts[1], parts[2], Convert.ToInt32(parts[3]), parts[4], ""));
             }   
 
 
@@ -110,7 +114,7 @@ namespace Directory
             else
                 for (int i = 0; i < readLater.Count; i++)
                 {
-                    Tema tema = new Tema(readLater[i].name, readLater[i].tags, readLater[i].discipline, readLater[i].difficulty, readLater[i].link);
+                    Tema tema = readLater[i];
                     themes.Add(tema);
                 }
 

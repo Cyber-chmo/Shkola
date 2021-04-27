@@ -122,3 +122,4 @@ C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.DisciplineFo
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.ReadLaterForm.resources
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.AddTema.resources
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.UserControl1.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.AuthForm.resources

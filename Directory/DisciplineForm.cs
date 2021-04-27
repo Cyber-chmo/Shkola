@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace Directory
 {
@@ -23,6 +24,7 @@ namespace Directory
             Text = predmet;
             label1.Text = predmet;
             label3.Text = File.ReadAllText("../../../Files/" + predmet + ".txt");
+            button3.Text = "Скачать учебник по " + predmet;
 
             comboBox1.Items.Clear();
             for (int i = 0; i < AllThemes.tems_list.Count; i++)
@@ -79,6 +81,16 @@ namespace Directory
                 System.Diagnostics.Process.Start(tema.link);
             else
                 MessageBox.Show("Нет никакого источника. Я придумал физику");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            WebClient wc = new WebClient();
+            wc.DownloadFile(tema.BookLink, "1.pdf");
+
+            MessageBox.Show("Сохранено в 1.pdf");
+
+
         }
     }
 }

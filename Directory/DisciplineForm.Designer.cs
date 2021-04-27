@@ -39,6 +39,7 @@ namespace Directory
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +96,7 @@ namespace Directory
             // 
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(548, 108);
+            this.textBox1.Location = new System.Drawing.Point(574, 183);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -105,7 +106,7 @@ namespace Directory
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(23, 182);
+            this.label3.Location = new System.Drawing.Point(23, 167);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(511, 241);
             this.label3.TabIndex = 7;
@@ -143,12 +144,25 @@ namespace Directory
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Font = new System.Drawing.Font("Candara Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(545, 90);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(227, 87);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Скачать учебник по";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // DisciplineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
@@ -187,5 +201,6 @@ namespace Directory
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

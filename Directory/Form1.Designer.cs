@@ -52,6 +52,8 @@ namespace Directory
             this.хочуДобавитьТемуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label4 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -263,6 +265,27 @@ namespace Directory
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 15;
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(485, 504);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(142, 45);
+            this.button7.TabIndex = 16;
+            this.button7.Text = "Войти";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(330, 224);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(59, 130);
+            this.button8.TabIndex = 17;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -270,6 +293,8 @@ namespace Directory
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button6);
@@ -317,6 +342,8 @@ namespace Directory
         private System.Windows.Forms.ToolStripMenuItem хочуДобавитьТемуToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
     }
 }
 
