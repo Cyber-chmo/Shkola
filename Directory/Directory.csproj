@@ -99,6 +99,12 @@
     <Compile Include="DisciplineForm.Designer.cs">
       <DependentUpon>DisciplineForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LetterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LetterForm.Designer.cs">
+      <DependentUpon>LetterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReadLaterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DisciplineForm.resx">
       <DependentUpon>DisciplineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LetterForm.resx">
+      <DependentUpon>LetterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReadLaterForm.resx">
       <DependentUpon>ReadLaterForm.cs</DependentUpon>

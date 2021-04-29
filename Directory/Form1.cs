@@ -138,5 +138,12 @@ namespace Directory
             AuthForm AF = new AuthForm();
             AF.ShowDialog();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            LetterForm LF = new LetterForm();
+            LF.ShowDialog();
+
+        }
     }
 }

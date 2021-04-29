@@ -54,6 +54,7 @@ namespace Directory
             this.label4 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -219,6 +220,7 @@ namespace Directory
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button6.Location = new System.Drawing.Point(485, 323);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(221, 31);
@@ -234,12 +236,13 @@ namespace Directory
             this.label3.Font = new System.Drawing.Font("Candara Light", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(491, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 33);
+            this.label3.Size = new System.Drawing.Size(102, 33);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Прочие опции";
+            this.label3.Text = "Прочее";
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.хочуДобавитьТемуToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -278,13 +281,25 @@ namespace Directory
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(330, 224);
+            this.button8.Location = new System.Drawing.Point(353, 244);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(59, 130);
             this.button8.TabIndex = 17;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.White;
+            this.button9.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.Location = new System.Drawing.Point(23, 512);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(221, 37);
+            this.button9.TabIndex = 18;
+            this.button9.Text = "Сообщить об ошибке";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form1
             // 
@@ -293,6 +308,7 @@ namespace Directory
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label4);
@@ -344,6 +360,7 @@ namespace Directory
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
 

@@ -114,7 +114,7 @@ namespace Directory
             else
                 for (int i = 0; i < readLater.Count; i++)
                 {
-                    Tema tema = readLater[i];
+                    Tema tema = readLater[i]; //???
                     themes.Add(tema);
                 }
 
