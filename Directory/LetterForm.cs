@@ -38,6 +38,9 @@ namespace Directory
             MailMessage m = new MailMessage(from, to);
             // тема письма
             m.Subject = "Тест";
+            // приложение файла
+            m.Attachments.Add(new Attachment("1.pdf"));
+            
             // текст письма
             m.Body = File.ReadAllText("Письмо.txt");
             // письмо представляет код html

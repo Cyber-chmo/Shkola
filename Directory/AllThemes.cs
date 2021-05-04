@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -114,7 +116,7 @@ namespace Directory
             else
                 for (int i = 0; i < readLater.Count; i++)
                 {
-                    Tema tema = readLater[i]; //???
+                    Tema tema = readLater[i]; 
                     themes.Add(tema);
                 }
 
@@ -209,6 +211,54 @@ namespace Directory
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            // отправитель - устанавливаем адрес и отображаемое в письме имя
+            MailAddress from = new MailAddress("ukrain.bimba@gmail.com", "✪ ω ✪");
+            // кому отправляем
+            MailAddress to = new MailAddress("ukrain.bimba@gmail.com");
+            // создаем объект сообщения
+            MailMessage m = new MailMessage(from, to);
+            // тема письма
+            m.Subject = "Тест";
+
+            // Отправка файла в виде таблицы
+            File.WriteAllText("Список.csv", "Тема,Ссылка");
+
+            foreach (Tema tema in AllThemes.readLater)
+            {
+                File.AppendAllText("Список.csv", Environment.NewLine + tema.name + "," + tema.link);
+
+            }
+            m.Attachments.Add(new Attachment("Список.csv"));
+
+            // текст письма
+            m.Body = File.ReadAllText("Письмо.txt");
+
+            foreach (Tema tema in AllThemes.readLater)
+            {
+                m.Body += Environment.NewLine +
+
+                "<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Читать" +
+                " <a target = \"_blank\" rel = \"nofollow noopener\" href = \"" + tema.link + "\"> " + tema.name + " </a> подробнее.</p>";
+            }
+
+
+
+            // письмо представляет код html
+            m.IsBodyHtml = true;
+            // адрес smtp-сервера и порт, с которого будем отправлять письмо
+            SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+            // логин и пароль
+            smtp.Credentials = new NetworkCredential("ukrain.bimba@gmail.com", "chruchru");
+            smtp.EnableSsl = true;
+            smtp.Send(m);
+            //  Console.Read();
+
+            MessageBox.Show("Письмо отправлено👌");
         }
     }
 }

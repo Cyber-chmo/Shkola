@@ -295,9 +295,9 @@ namespace Directory
             this.button9.Font = new System.Drawing.Font("Candara", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button9.Location = new System.Drawing.Point(23, 512);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(221, 37);
+            this.button9.Size = new System.Drawing.Size(244, 37);
             this.button9.TabIndex = 18;
-            this.button9.Text = "Сообщить об ошибке";
+            this.button9.Text = "Сообщить об ошибке / обратная связь";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 

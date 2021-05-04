@@ -35,6 +35,8 @@ namespace Directory
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -50,9 +52,10 @@ namespace Directory
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(360, 64);
+            this.textBox1.Location = new System.Drawing.Point(354, 106);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(394, 228);
             this.textBox1.TabIndex = 1;
             // 
@@ -65,7 +68,7 @@ namespace Directory
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(54, 154);
+            this.textBox3.Location = new System.Drawing.Point(54, 202);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(210, 20);
             this.textBox3.TabIndex = 3;
@@ -79,12 +82,32 @@ namespace Directory
             this.label1.TabIndex = 4;
             this.label1.Text = "Введите свою почту";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(51, 169);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 13);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Введите тему письма";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(351, 81);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(157, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Введите содержимое письма\r\n";
+            // 
             // LetterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -105,5 +128,7 @@ namespace Directory
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
