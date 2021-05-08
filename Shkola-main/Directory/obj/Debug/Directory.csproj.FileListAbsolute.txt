@@ -1,0 +1,143 @@
+C:\Нада\Shkola-main\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main (1)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main (2)\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main (3)\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main (4)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\ПроЭкт\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\ПроЭкт\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\ПроЭкт\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\ПроЭкт\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main (5)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.Form2.resources
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.PhysicsForm.resources
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Users\user\Documents\Vazhno\Shkola\Directory\bin\Debug\Directory.exe.config
+C:\Users\user\Documents\Vazhno\Shkola\Directory\bin\Debug\Directory.exe
+C:\Users\user\Documents\Vazhno\Shkola\Directory\bin\Debug\Directory.pdb
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.Form1.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.exe
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.pdb
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.AllThemes.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\bin\Debug\Directory.exe.config
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\bin\Debug\Directory.exe
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\bin\Debug\Directory.pdb
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.AllThemes.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.exe
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.pdb
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.DisciplineForm.resources
+C:\Users\user\Documents\Vazhno\Shkola-main\Directory\obj\Debug\Directory.ReadLaterForm.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.DisciplineForm.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.ReadLaterForm.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.AddTema.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.UserControl1.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.AuthForm.resources
+C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.LetterForm.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.exe
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.pdb
+D:\Инженерка\Shkola-main\Directory\bin\Debug\Directory.exe.config
+D:\Инженерка\Shkola-main\Directory\bin\Debug\Directory.exe
+D:\Инженерка\Shkola-main\Directory\bin\Debug\Directory.pdb
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.AddTema.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.AuthForm.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.Form1.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.AllThemes.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.DisciplineForm.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.LetterForm.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.ReadLaterForm.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.Properties.Resources.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.UserControl1.resources
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
+D:\Инженерка\Shkola-main\Directory\obj\Debug\Directory.csproj.CoreCompileInputs.cache
