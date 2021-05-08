@@ -107,6 +107,7 @@ namespace Directory
             this.label4.Size = new System.Drawing.Size(206, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Ещё не зарегистрированы?";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox1
             // 

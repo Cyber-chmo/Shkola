@@ -136,6 +136,7 @@ namespace Directory
                 themes[i].label.Click += new EventHandler(ReadTheme);
                 panel1.Controls.Add(themes[i].label);
 
+                
                 y = y + 30;
             }            
         }
