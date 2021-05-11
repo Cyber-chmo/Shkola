@@ -60,5 +60,10 @@ namespace Directory
                 translate(Form1.RusWords);
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

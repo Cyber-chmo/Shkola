@@ -47,7 +47,6 @@ namespace Directory
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(264, 21);
             this.textBox1.TabIndex = 1;
-            this.textBox1.UseSystemPasswordChar = true;
             // 
             // textBox2
             // 
@@ -55,6 +54,7 @@ namespace Directory
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(264, 21);
             this.textBox2.TabIndex = 2;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -107,6 +107,7 @@ namespace Directory
             this.label4.Size = new System.Drawing.Size(206, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "Ещё не зарегистрированы?";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox1
             // 

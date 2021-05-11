@@ -19,7 +19,18 @@ namespace Directory
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-          
+            //if()
+
+            pictureBox1.Load("../../../Pictures/view.png");
+            textBox2.UseSystemPasswordChar = false;
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Регистрация";
+            label2.Text = "Введите логин";
+            label3.Text = "Введите пароль";
 
         }
     }
