@@ -13,6 +13,9 @@ namespace Directory
 {
     public partial class DisciplineForm : Form
     {
+
+
+     
         /// <summary>
         /// Выбранная тема
         /// </summary>
@@ -26,13 +29,18 @@ namespace Directory
             label3.Text = File.ReadAllText("../../../Files/" + predmet + ".txt");
             button3.Text = "Скачать учебник по " + predmet;
 
+
             comboBox1.Items.Clear();
             for (int i = 0; i < AllThemes.tems_list.Count; i++)
             {
                 //Если у темы предмет совпал, добавляем в список
                 if (AllThemes.tems_list[i].discipline == predmet)
-                    comboBox1.Items.Add(AllThemes.tems_list[i].name); 
+                    comboBox1.Items.Add(AllThemes.tems_list[i].name);
             }
+
+            //Запилить похожие темы
+
+
         }
 
         private void PhysicsForm_Load(object sender, EventArgs e)
@@ -52,6 +60,13 @@ namespace Directory
                 try
                 {
                     label3.Text = File.ReadAllText("../../../Files/Темы/" + label1.Text + " " + comboBox1.Text + ".txt");
+                    string[] liness = File.ReadAllLines("../../../Files/Темы/" + label1.Text + " " + comboBox1.Text + ".txt");
+
+                    if (liness.Length > 10)
+                    {
+                        panel1.AutoScroll = true;
+                        label3.AutoSize = true;
+                    }
                 }
                 catch (Exception)
                 {
@@ -91,6 +106,11 @@ namespace Directory
             MessageBox.Show("Сохранено в 1.pdf");
 
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            //Запилить похожие темы
         }
     }
 }

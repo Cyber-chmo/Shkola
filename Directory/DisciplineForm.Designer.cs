@@ -40,6 +40,7 @@ namespace Directory
             this.button3 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,9 +97,10 @@ namespace Directory
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(9, 12);
+            this.label3.Location = new System.Drawing.Point(9, 2);
+            this.label3.MaximumSize = new System.Drawing.Size(511, 10000000);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(498, 498);
+            this.label3.Size = new System.Drawing.Size(511, 271);
             this.label3.TabIndex = 7;
             // 
             // button1
@@ -143,6 +145,7 @@ namespace Directory
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(248, 124);
             this.panel1.TabIndex = 12;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -153,12 +156,21 @@ namespace Directory
             this.panel2.Size = new System.Drawing.Size(531, 276);
             this.panel2.TabIndex = 13;
             // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(126, 449);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(154, 25);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Похожие темы";
+            // 
             // DisciplineForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button3);
@@ -197,5 +209,6 @@ namespace Directory
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label4;
     }
 }

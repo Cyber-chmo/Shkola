@@ -56,9 +56,13 @@ namespace Directory
         List<Tema> themes = new List<Tema>();
 
 
-
+        /// <summary>
+        /// Заполнение списка тем
+        /// </summary>
         public static void FillThemes()
         {
+            tems_list = new List<Tema>();
+
             string[] lines = File.ReadAllLines("../../../Files/Список.txt");
             foreach(string line in lines)
             {

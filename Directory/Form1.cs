@@ -103,7 +103,8 @@ namespace Directory
         private void button6_Click(object sender, EventArgs e)
         {
             AddTema addtema = new AddTema();
-            addtema.Show();
+            addtema.ShowDialog();
+            AllThemes.FillThemes();
         }
 
 
