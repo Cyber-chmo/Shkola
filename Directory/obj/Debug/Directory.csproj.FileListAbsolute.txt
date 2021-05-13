@@ -97,7 +97,6 @@ C:\Нада\Shkola-main (6)\Shkola-main\Directory\obj\Debug\Directory.pdb
 C:\Users\user\Documents\Vazhno\Shkola\Directory\bin\Debug\Directory.exe.config
 C:\Users\user\Documents\Vazhno\Shkola\Directory\bin\Debug\Directory.exe
 C:\Users\user\Documents\Vazhno\Shkola\Directory\bin\Debug\Directory.pdb
-C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.csprojAssemblyReference.cache
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.Form1.resources
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.Properties.Resources.resources
 C:\Users\user\Documents\Vazhno\Shkola\Directory\obj\Debug\Directory.csproj.GenerateResource.cache
